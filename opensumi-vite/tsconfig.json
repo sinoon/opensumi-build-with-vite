@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "module": "es2020",
+        "target": "es2021",
+        "moduleResolution": "node",
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": false,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "importHelpers": false,
+        "resolveJsonModule": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "downlevelIteration": true,
+        "noEmitOnError": false,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "jsx": "react",
+        "typeRoots": ["./node_modules/@types", "./types"],
+        "lib": ["dom", "esnext"],
+        "outDir": "./dist"
+    },
+    "include": ["src", "types"]
+}

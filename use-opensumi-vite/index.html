@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="DevLoop is a Full WebIDE in Browser!"
+        />
+        <title>LiteIDE Dev Demo</title>
+        <script>
+            let savedColors = {}
+            try {
+                savedLayout = JSON.parse(localStorage.getItem('layout') || '{}')
+                savedColors = JSON.parse(localStorage.getItem('theme') || '{}')
+            } catch (err) {}
+            document.getElementsByTagName('html')[0].style.backgroundColor =
+                savedColors.editorBackground || '#2a2a2a'
+        </script>
+        <link
+            rel="stylesheet"
+            href="https://at.alicdn.com/t/font_1432262_10kox0x8teb.css"
+        />
+    </head>
+    <body style="height: 100vh">
+        <div id="root" style="height: 100%"></div>
+    </body>
+</html>
